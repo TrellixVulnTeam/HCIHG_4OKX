@@ -1,0 +1,11 @@
+.footer{
+    grid-row-start:2;
+    grid-row-end:3;
+    display: flex;
+    align-content: baseline;
+    color:$color-titulo;
+    font-family: $family-font-titulos;
+    margin:5px;
+    padding:5px;
+    background-color: $color-fondo;
+  }

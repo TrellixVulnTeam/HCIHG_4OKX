@@ -1,0 +1,68 @@
+@import "variables";
+@import "mixin";
+
+/* Diseño body de todas las páginas*/
+body{
+display:grid;
+grid-template-rows:1fr 1fr 1fr;
+grid-template-columns:1fr;
+@include margpadd(0,0);
+justify-content:center;
+align-content:center;
+background-image: $background-image;
+Background-size: cover;
+}
+
+.header{
+    grid-row-start:0;
+    grid-row-end:1;
+  }
+.main{
+    grid-row-start:1;
+    grid-row-end:2;
+}
+div.container{
+      padding:0;
+    }
+/* especificos diseño botones*/
+.btn{
+border: $border-button;
+background-color: $background-button;
+color:$color-button;
+text-align: center;
+border-radius:8px;
+}
+.btn:hover{
+  background-color:rgba(245, 245, 245, 0.897);
+  color: grey;
+}
+.btn--login{
+  @extend .btn;
+  width: 60%;
+}
+.btn--search{
+  @extend .btn;
+  width: 100%;
+}
+
+@import  "partialfooter";
+
+/* especificos diseño redes sociales*/
+$redes: (twitter: #55ACEE, instagram: #b33a8e);
+@each $red, $color in $redes{
+  .fa-#{$red}{
+    background-color:$color;
+  }
+}
+.fa-twitter {
+    color: white;
+    height: 15px;
+    width:15px;
+}
+.fa-instagram {
+        color: white;
+        height: 15px;
+        width:15px;
+}
+
+
