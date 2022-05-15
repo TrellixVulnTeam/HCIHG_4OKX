@@ -16,6 +16,7 @@ Background-size: cover;
 .header{
     grid-row-start:0;
     grid-row-end:1;
+    @include margpadd(0,0);
   }
 .main{
     grid-row-start:1;

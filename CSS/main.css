@@ -13,7 +13,9 @@ body {
 
 .header {
   grid-row-start: 0;
-  grid-row-end: 1; }
+  grid-row-end: 1;
+  margin: 0;
+  padding: 0; }
 
 .main {
   grid-row-start: 1;
