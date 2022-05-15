@@ -16,7 +16,6 @@ Background-size: cover;
 .header{
     grid-row-start:0;
     grid-row-end:1;
-    @include margpadd(0,0);
   }
 .main{
     grid-row-start:1;
@@ -49,7 +48,7 @@ border-radius:8px;
 @import  "partialfooter";
 
 /* especificos diseño redes sociales*/
-$redes: (twitter: #55ACEE, instagram: #b33a8e);
+$redes: (twitter: #e3ecf3, instagram: #dfd5dc);
 @each $red, $color in $redes{
   .fa-#{$red}{
     background-color:$color;
