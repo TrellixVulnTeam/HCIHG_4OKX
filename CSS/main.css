@@ -13,9 +13,7 @@ body {
 
 .header {
   grid-row-start: 0;
-  grid-row-end: 1;
-  margin: 0;
-  padding: 0; }
+  grid-row-end: 1; }
 
 .main {
   grid-row-start: 1;
@@ -55,10 +53,10 @@ div.container {
 
 /* especificos diseño redes sociales*/
 .fa-twitter {
-  background-color: #55ACEE; }
+  background-color: #e3ecf3; }
 
 .fa-instagram {
-  background-color: #b33a8e; }
+  background-color: #dfd5dc; }
 
 .fa-twitter {
   color: white;
